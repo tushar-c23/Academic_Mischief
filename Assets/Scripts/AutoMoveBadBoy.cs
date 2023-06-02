@@ -5,9 +5,9 @@ using UnityEngine;
 public class AutoMoveBadBoy : MonoBehaviour
 {
     //public GameObject Targets[];
-    public float movementSpeed;
-    public float threshold = 5;
-    public Vector3[] Targets;
+    public float movementSpeed = 0.01f;
+    public float threshold = 2f;
+    private Vector3[] Targets;
     
     void Start()
     {

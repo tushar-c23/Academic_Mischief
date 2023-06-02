@@ -4,9 +4,24 @@ using UnityEngine;
 
 public class GoodBoysHoverUp : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] float distanceToCover=2f;
+    [SerializeField] float speed=0.01f;
+
+    private Vector3 startPosition;
+    private Vector3 v;
+
     void Start()
     {
-        transform.position = Vector3.Lerp(transform.position, new Vector3(Random.Range(-5,5), 0, Random.Range(-5,5)), 0.005f);
+        startPosition = transform.position;
+        v = new Vector3(startPosition.x, startPosition.y+distanceToCover, startPosition.z);
+        // v.y += distanceToCover;
+    }
+
+    void Update()
+    {
+        // Vector3 v = startPosition;
+        // v.y += distanceToCover * Mathf.Sin(Time.time * speed);
+        transform.position = Vector3.Lerp(startPosition, v, speed);
+        // transform.position = v;
     }
 }
