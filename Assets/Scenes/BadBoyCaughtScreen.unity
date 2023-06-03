@@ -250,8 +250,9 @@ GameObject:
   - component: {fileID: 276607367}
   - component: {fileID: 276607366}
   - component: {fileID: 276607365}
+  - component: {fileID: 276607368}
   m_Layer: 5
-  m_Name: MiniGame 1 Button
+  m_Name: RunnerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 276607366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 276607368}
+        m_TargetAssemblyTypeName: GameMerge, Assembly-CSharp
+        m_MethodName: RunnerGameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &276607366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,6 +373,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276607363}
   m_CullTransparentMesh: 1
+--- !u!114 &276607368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276607363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8acb7055e0a2f4aa77dbf06e033782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &419865414
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,8 +635,9 @@ GameObject:
   - component: {fileID: 1263946750}
   - component: {fileID: 1263946749}
   - component: {fileID: 1263946748}
+  - component: {fileID: 1263946751}
   m_Layer: 5
-  m_Name: MiniGame 2 Button
+  m_Name: AssButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -681,7 +707,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1263946749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1263946751}
+        m_TargetAssemblyTypeName: GameMerge, Assembly-CSharp
+        m_MethodName: AssDestroyerStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1263946749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,6 +758,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263946746}
   m_CullTransparentMesh: 1
+--- !u!114 &1263946751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263946746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8acb7055e0a2f4aa77dbf06e033782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1494101169
 GameObject:
   m_ObjectHideFlags: 0
