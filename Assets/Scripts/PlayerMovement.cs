@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.y < 0.5)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("FallDeath");
         }
 
         /* bool turnLeft = Input.GetKeyDown(KeyCode.A) || Input.touchCount > 0 && Input.GetTouch(0).position.x < Screen.width / 2;
@@ -141,12 +141,19 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log(score);
         alive = false;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("FallDeath");
 
     }
     public void Finish()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+2);
+        if(score >= 7)
+        {
+            SceneManager.LoadScene("endScreen");
+        }
+        else
+        {
+            SceneManager.LoadScene("LowScore");
+        }
     }
 }
 

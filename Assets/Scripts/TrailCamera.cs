@@ -5,8 +5,8 @@ using UnityEngine;
 public class TrailCamera : MonoBehaviour
 {
     public Transform target;
-    public float trailDistance = 0.2f;
-    public float heightOffset = 2.0f;
+    public float trailDistance = 0.8f;
+    public float heightOffset = 1.0f;
     public float cameraDelay = 0.7f;
 
     // Update is called once per frame

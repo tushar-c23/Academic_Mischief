@@ -7,6 +7,6 @@ public class LowScore : MonoBehaviour
 {
     public void LowScoreWarning()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
+        SceneManager.LoadScene("SampleScene");
     }
 }
