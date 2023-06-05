@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (score <= -2)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+            SceneManager.LoadScene("LowScore");
         }
         if (collision.gameObject.tag == "assignment")
         {

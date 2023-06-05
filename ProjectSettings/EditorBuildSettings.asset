@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Scenes/GoodBoyCaughtScreen.unity
     guid: 56802f63f026b2145b47359ce822e730
   - enabled: 1
-    path: Assets/Scenes/EndMenu1.unity
+    path: Assets/Scenes/endScreen.unity
     guid: 4d97c9f8236c1bf4a8354687de0607d8
   - enabled: 1
-    path: Assets/Scenes/endScreen.unity
+    path: Assets/Scenes/endScreen1.unity
     guid: cdfaf201896dc664799ae010e1b9943d
   - enabled: 1
     path: Assets/Scenes/FallDeath.unity

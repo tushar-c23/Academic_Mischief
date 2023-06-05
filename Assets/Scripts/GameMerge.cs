@@ -12,6 +12,6 @@ public class GameMerge : MonoBehaviour
 
     public void AssDestroyerStart()
     {
-        SceneManager.LoadScene("Scene_Gameplay");
+        SceneManager.LoadScene("Scene_PlayerSelection");
     }
 }
